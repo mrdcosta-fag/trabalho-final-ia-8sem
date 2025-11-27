@@ -222,6 +222,8 @@ print("Esta análise refinada é um passo importante para a construção de um m
 #
 #-------------------------------------------------------------------------------------------------
 
+import pandas as pd
+
 # 1. Separar a variável alvo 'preco_aluguel'
 y = df_analise['preco_aluguel']
 
@@ -244,6 +246,9 @@ print(f"Dimensões do dataset de features (X) após One-Hot Encoding: {X.shape}"
 print(f"Dimensões do dataset da variável alvo (y): {y.shape}")
 print("As primeiras 5 linhas do dataset de features (X) após One-Hot Encoding:")
 display(X.head())
+
+import pandas as pd
+import numpy as np # Included for completeness of previous steps, though not explicitly used in the final part
 
 # Reconstruct df_analise from scratch, incorporating all previous steps
 # 1. Load the dataset (from cell dc2047e6)
@@ -380,6 +385,7 @@ print(f"R-squared (R2): {r2:.2f}")
 #
 #-------------------------------------------------------------------------------------------------
 
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import RandomizedSearchCV
 import numpy as np
 
@@ -579,3 +585,4 @@ r2_optimized_rf = 0.43
 print(f"| R^2 (Explicabilidade)      | {r2_initial_rf:<21.2f} | {r2_optimized_rf:<23.2f} | {r2_gbr:<27.2f} |")
 print(f"| MAE (Erro Médio Absoluto)  | R$ {mae_initial_rf:<18.2f} | R$ {mae_optimized_rf:<20.2f} | R$ {mae_gbr:<24.2f} |")
 print(f"| MSE (Erro Quadrático Médio)| {mse_initial_rf:<21.2f} | {mse_optimized_rf:<23.2f} | {mse_gbr:<27.2f} |")
+
