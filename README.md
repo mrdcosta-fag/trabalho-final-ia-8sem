@@ -1,3 +1,7 @@
+### Autores
+Diego M. Teixeira
+Murilo R. da Costa
+
 ## Arquivo Principal
 Os resultados obtidos pelo trabalho juntamente à todas as etapas detalhadas e os algoritmos usados estão presentes no Notebook do Google Colab presente no repositório.
 
