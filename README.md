@@ -1,5 +1,5 @@
 ### Autores
-Diego M. Teixeira
+Diego M. Teixeira,
 Murilo R. da Costa
 
 ## Arquivo Principal
